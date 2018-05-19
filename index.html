@@ -3,8 +3,7 @@
   
   <head>
     <link rel="shortcut icon" href="./img/jFieldsIcon.png">
-    <title>Jif's Site</title>
-
+    <title id="TITLE"></title>
     <div id="wrapperHeader">
       <div id="header">
         <img src="./img/logo.png" alt="logo" class="center"/>
@@ -21,6 +20,14 @@
       background: url("./img/treePattern.png");
     }
     </style>
+    <script>
+      var titleList = ["Jif's Site", "You came to the wrong place.", "TESTING", "UNDER CONSTRUCTION"];
+      var title = '';
+      var listLen = titleList.length;
+      var ranTitle = Math.floor(Math.random() * listLen);
+      title = titleList[ranTitle];
+      document.getElementById("TITLE"),innerHTML = title;
+    </script>
   </head>
   
 </html>
