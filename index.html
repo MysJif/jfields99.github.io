@@ -21,11 +21,13 @@
     }
     </style>
     <script>
-      var titleList = ["Jif's Site", "You came to the wrong place.", "TESTING", "UNDER CONSTRUCTION"];
-      var listLen = titleList.length;
-      var ranTitle = Math.floor(Math.random() * listLen);
-      var title = titleList[ranTitle];
-      document.getElementById("TITLE"),innerHTML = title;
+      window.onload = () => {
+        var titleList = ["Jif's Site", "You came to the wrong place.", "TESTING", "UNDER CONSTRUCTION"];
+        var listLen = titleList.length;
+        var ranTitle = Math.floor(Math.random() * listLen);
+        var title = titleList[ranTitle];
+        document.getElementById("TITLE"),innerHTML = title;
+      }
     </script>
   </head>
   
