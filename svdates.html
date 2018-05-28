@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html>
+  <script>
+    function day365(month, day) {
+      var dayOfYear = 0;
+      if (month >= 1) {
+        dayOfYear = day;
+      }
+      if (month >= 2) {
+        dayOfYear += 31;
+      }
+      if (month >= 3) {
+        dayOfYear += 28;
+      }
+      if (month >= 4) {
+        dayOfYear += 31;
+      }
+      if (month >= 5) {
+        dayOfYear += 30;
+      }
+      if (month >= 6) {
+        dayOfYear += 31;
+      }
+      if (month >= 7) {
+        dayOfYear += 30;
+      }
+      if (month >= 8) {
+        dayOfYear += 31;
+      }
+      if (month >= 9) {
+        dayOfYear += 31;
+      }
+      if (month >= 10) {
+        dayOfYear += 30;
+      }
+      if (month >= 11) {
+        dayOfYear += 31;
+      }
+      if (month >= 12) {
+        dayOfYear += day;
+      }
+      
+      return dayOfYear;
+    }
+  </script>
+</html>
