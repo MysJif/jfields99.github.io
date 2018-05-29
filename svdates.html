@@ -170,7 +170,8 @@
         var dayOfSeason = dayOfMonth(sdDayOfYear);
         var season = getSeason(sdDayOfYear);
         var dayOfWeek = getSDWeek(dayOfSeason);
-        return dayOfWeek + ", " + dayOfSeason + ", " + season;
+        var result = dayOfWeek + ", " + dayOfSeason + ", " + season;
+        document.querySelector('.results').innerHTML = result;
       }
     </script>
   </head>
@@ -181,5 +182,8 @@
       Date: 
       <input type="date" id="cDate">
       <input id="clickMe" type="button" value="Convert!" onclick="fullConversion();" />
+      <br>
+      <br>
+      <div class="results"></div>
     </center>
 </html>
