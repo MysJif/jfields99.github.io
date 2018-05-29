@@ -145,7 +145,8 @@
           return "Sunday";
         }
       }
-      function fullConversion(month, day, year) {
+      function fullConversion(date) {
+        
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
@@ -163,6 +164,6 @@
     <center>
       Date: 
       <input type="date" name="cDate">
-      <input id="clickMe" type="button" value="clickme" onclick="fullConversion();" />
+      <input id="clickMe" type="button" value="Convert!" onclick="fullConversion(cDate);" />
     </center>
 </html>
