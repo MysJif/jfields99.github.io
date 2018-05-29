@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Stardew Valley Date Converter</title>
+    <script type="text/javascript">
+      document.write(cDate);
+    </script>
     <center>
       <h1>
         Stardew Valley
@@ -147,7 +150,6 @@
         }
       }
       function fullConversion(date) {
-        document.write(date);
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
