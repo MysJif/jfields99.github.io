@@ -151,12 +151,18 @@
         return parseInt(aDate[1]);
       }
       function getDay(date) {
+        var aDate = date.split("-");
+        return parseInt(aDate[2]);
       }
       function getYear(date) {
+        var aDate = date.split("-");
+        return parseInt(aDate[0]);
       }
       function fullConversion() {
         var date = document.getElementById("cDate").value;
-        console.log(getMonth(date));
+        var month = getMonth(date);
+        var day = getDay(date);
+        var year = getYear(date);
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
