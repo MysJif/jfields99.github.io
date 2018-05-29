@@ -184,12 +184,14 @@
         var dayOfSeason = dayOfMonth(sdDayOfYear);
         var season = getSeason(sdDayOfYear);
         var dayOfWeek = getSDWeek(dayOfSeason);
-        var result = dayOfWeek + ", " + dayOfSeason + ", " + season;
-        document.querySelector('.results').innerHTML = result;
+        return = dayOfWeek + ", " + dayOfSeason + ", " + season;
       }
       var currentDate = new Date();
-      console.log(currentDate);
-      
+      var cMonth = currentDate.getMonth()+1;
+      var ccDay = currentDate.getdate();
+      var cYear = currentDate.getFullYear();
+      var title = CurrentConversion(cMonth, ccDay, cYear);
+      document.title = title;
     </script>
   </head>
   <body>
