@@ -173,10 +173,7 @@
         var result = dayOfWeek + ", " + dayOfSeason + ", " + season;
         document.querySelector('.results').innerHTML = result;
       }
-      function CurrentConversion() {
-        var month = getMonth(date);
-        var day = getDay(date);
-        var year = getYear(date);
+      function CurrentConversion(month, day, year) {
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
