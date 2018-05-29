@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Stardew Valley Date Converter</title>
     <center>
       <h1>
         Stardew Valley
@@ -146,9 +146,15 @@
           return "Sunday";
         }
       }
+      function getMonth(date) {
+      }
+      function getDay(date) {
+      }
+      function getYear(date) {
+      }
       function fullConversion() {
         var date = document.getElementByID("cDate");
-        document.title = date;
+        console.log(date);
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
