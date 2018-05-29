@@ -2,9 +2,6 @@
 <html>
   <head>
     <title>Stardew Valley Date Converter</title>
-    <script type="text/javascript">
-      document.write(cDate);
-    </script>
     <center>
       <h1>
         Stardew Valley
@@ -149,7 +146,9 @@
           return "Sunday";
         }
       }
-      function fullConversion(date) {
+      function fullConversion() {
+        var date = document.getElementByID("cDate");
+        document.write(date);
         var dayOfIRLYear = day365(month, day);
         var dayOfSpringYear = dayOfYearAdjust(dayOfIRLYear);
         var dayLeapYearAdj =  leapYearAdjust(dayOfSpringYear, year);
@@ -167,6 +166,6 @@
     <center>
       Date: 
       <input type="date" name="cDate">
-      <input id="clickMe" type="button" value="Convert!" onclick="fullConversion(cDate);" />
+      <input id="clickMe" type="button" value="Convert!" onclick="fullConversion();" />
     </center>
 </html>
